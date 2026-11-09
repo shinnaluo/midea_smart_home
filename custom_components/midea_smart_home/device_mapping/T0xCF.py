@@ -366,6 +366,12 @@ DEVICE_MAPPING = {
                 "error_code": {
                     "device_class": SensorDeviceClass.ENUM
                 }
+            },
+            Platform.SWITCH: {
+                "silence_set_state": {
+                    "control_key": "silence_function_state",
+                    "command": {"control_type": "5"},
+                }
             }
         }
     }
